@@ -6,8 +6,8 @@ export default async function Filmes() {
     const numberSort = Math.floor(Math.random() * 21)
 
     return (
-        <section className="text-white flex flex-col">
-           
+        <section className="text-white flex flex-col w-full">
+           Filmes
         </section>
     )
 }

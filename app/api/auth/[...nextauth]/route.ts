@@ -9,7 +9,7 @@ const handler =  NextAuth({
     })],
     callbacks: {
         async redirect(){
-            return ("http://localhost:3000/filmes")
+            return ("http://localhost:3000/inicio")
         }
     }
 })
