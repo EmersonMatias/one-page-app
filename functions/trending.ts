@@ -5,7 +5,7 @@ export async function trending(): Promise<TTrending> {
     const numberSort = Math.floor(Math.random() * 21)
     const trending = trendingList[numberSort]
     const backgroundImageUrl = `${process.env.BASE_URL_IMAGE}/${trending.backdrop_path}`
-    const trendingTitle = trending.name || trending.title
+    const trendingTitle = trending.name ?? trending.title
     const trendingDescription = trending.overview
 
     const res = {

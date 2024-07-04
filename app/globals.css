@@ -2,10 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
- --background-container: #060606
+  --background-container: #060606;
+  --swiper-navigation-color: #eedfdf;
+  --swiper-navigation-sides-offset: 30px;
 }
 
 body {
-  background-color: var(--background-container) ;
+  background-color: var(--background-container);
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+  }
+
+  .swiper-button-next {
+    background-image: url("../public/svg/nextArrow.svg");
+  }
+
+  .swiper-button-prev {
+    background-image: url("../public/svg/prevArrow.svg");  }
+
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}
 }
