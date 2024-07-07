@@ -10,7 +10,7 @@ export default function NavbarInicio() {
                 <AiFillHome className="h-auto w-8 text-white" />
             </Link>
 
-            <Link href="/inicio/entretenimento">
+            <Link href="/entretenimento">
                 <MdLocalMovies className="h-auto w-8 text-white"/>
             </Link>
 

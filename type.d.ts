@@ -12,14 +12,48 @@ type Movie = {
     video: boolean,
     vote_average: number,
     vote_count: number,
-    media_type: 'tv' | 'movie' | 'person'
-    name?: string
-    title?: string,
+    title: string
 }
 
-type TMovies = {
+type Serie =  {
+    backdrop_path: string,
+    first_air_date: string,
+    genre_ids: number[],
+    id: number,
+    name: string,
+    origin_country: string[],
+    original_language: string,
+    original_name: string,
+    overview: string,
+    popularity: number,
+    poster_path: string,
+    vote_average: 5,
+    vote_count: 13
+}
+
+type Media_Type = {
+    media_type: "tv" | "movie" | "person"
+}
+
+type Trending = {
     page: number,
-    results: Movie[],
+    results: (Movie & Media_Type  | Serie & Media_Type)[],
     total_pages: number,
     total_results: number
 }
+
+type OnTheAir = {
+    page: number,
+    results: TSerie[]
+}
+
+type NowPlaying = {
+    dates: {
+        maximum: string,
+        minimum: string
+    },
+    page: number,
+    results: TMovie[]
+}
+
+
