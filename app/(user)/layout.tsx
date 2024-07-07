@@ -1,4 +1,4 @@
-import NavbarInicio from "@/components/navbar-inicio/navbar-inicio";
+import NavbarInicio from "@/components/user/navbar-inicio";
 
 export default function InicioLayout({
     children,

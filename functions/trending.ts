@@ -1,4 +1,5 @@
-import { getTrendingList } from "@/app/(user)/entretenimento/requests"
+
+import getTrendingList from "@/services/GET/trending-list"
 import { isMovie } from "./is-movie"
 
 export async function trending(): Promise<Trending> {

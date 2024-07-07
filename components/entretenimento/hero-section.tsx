@@ -3,7 +3,7 @@ import Image from "next/image";
 import { MdFavorite } from "react-icons/md";
 import { RiAddBoxFill } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
-import Button from "../ui/button";
+import Button from "../_ui/button";
 
 export default async function HerosectionEntretenimento() {
     const { backgroundImageUrl, trendingDescription, trendingTitle } = await trending()

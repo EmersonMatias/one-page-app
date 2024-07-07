@@ -7,8 +7,6 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { isMovie } from "@/functions/is-movie";
 
-
-
 export default function Carousel({ trendingList, className, title }: CarouselProps) {
     return (
         <div className={`${className} `} >
