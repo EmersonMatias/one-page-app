@@ -42,9 +42,27 @@ type Trending = {
     total_results: number
 }
 
+type Upcoming = {
+    dates: {
+        maximum: string,
+        minimum: string,
+    }
+    page: number,
+    results: Moveis[],
+    total_pages: number,
+    total_results: number
+}
+
+type AiringToday = {
+    page: number,
+    results: Serie[],
+    total_pages: number,
+    total_results: number
+}
+
 type OnTheAir = {
     page: number,
-    results: TSerie[]
+    results: Serie[]
 }
 
 type NowPlaying = {
@@ -53,7 +71,7 @@ type NowPlaying = {
         minimum: string
     },
     page: number,
-    results: TMovie[]
+    results: Movie[]
 }
 
 
